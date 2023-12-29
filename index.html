@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ganhar Robux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <button id="btnGanharRobux">Aperte aqui para ganhar Robux</button>
+  <p id="quantidadeRobux">Robux: </p>
+</div>
+
+<script>
+  document.getElementById('btnGanharRobux').addEventListener('click', function() {
+    let quantidade = Math.floor(Math.random() * 1000) + 1; // Gera um número aleatório entre 1 e 1000
+    document.getElementById('quantidadeRobux').textContent = `Robux: ${quantidade}`;
+  });
+</script>
+
+</body>
+</html>
